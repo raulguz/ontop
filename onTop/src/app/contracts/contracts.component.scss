@@ -1,0 +1,60 @@
+.contracts-container {
+    width: 1120px;
+    height: 445px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 31px 12px 31px 12px;
+}
+.table-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+    &__title {
+        width: 160px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        &--large {
+            width: 220px; 
+        }
+    }
+}
+
+.table-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    height: 90px;
+    background: #F9F9F9;
+    &__value {
+        width: 160px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #3B3B3B;
+        &--large {
+            width: 220px; 
+        }
+    }
+    &-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        width: 220px;
+        &__value {
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #3B3B3B;
+        }
+    }
+}
