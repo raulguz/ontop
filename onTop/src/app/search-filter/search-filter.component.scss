@@ -68,8 +68,12 @@
             left: 10px;
         }
     }
+    .search-container-buttons {
+        display: flex;
+        column-gap: 18px;
+    }
     &__search-input {
-        width: 779px;      
+        width: 750px;      
         height: 58px;
         min-width: 300px;
         border: 0.5px solid #989B9B;
@@ -102,5 +106,8 @@
 @media (max-width: 768px) {
     .filter-container-item__input, .filter-container-item, .search-container__search-input {
         width: 95%;
+    }
+    .search-container__new-hire-button {
+        width: 280px;
     }
 }
