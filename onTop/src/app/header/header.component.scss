@@ -1,0 +1,19 @@
+@import "/onTop/src/assets/variables/_colors.scss";
+.header-container {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: $white;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.poke-logo {
+    height: 51px;
+    width: 138px;
+    border-radius: 0px;
+}
