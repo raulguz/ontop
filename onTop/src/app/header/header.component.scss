@@ -64,3 +64,37 @@
         margin-right: 40px;
     }
 }
+
+.burguer-menu {
+    display: none;
+    flex-direction: column;
+    row-gap: 3.48px;
+    display: none;
+    &__item {
+        width: 29.57px;
+        height: 4.35px;
+    }
+}
+
+@media (max-width: 768px) {
+  .menu-container, .header-user-profile {
+      display: none;
+  }
+
+  .header-container {
+      justify-content: space-between;
+      padding-right: 30px;
+      padding-left: 30px;
+      height: 61px;
+  }
+
+  .header-logo {
+    &__img{
+        width: 79px;
+        height: 19px;
+    }
+    }
+    .burguer-menu {
+        display: flex;
+    }
+}
