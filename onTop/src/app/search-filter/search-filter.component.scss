@@ -108,7 +108,7 @@
     display: flex;
     column-gap: 7px;
     justify-content: end;
-    margin-right: 18px;
+    margin-right: 65px;
     &__label {
         font-weight: 400;
         font-size: 16px;
@@ -126,5 +126,16 @@
     }
     .clear-filter-container {
         visibility:visible;
+    }
+
+    .filter-container, .search-container {
+        justify-content: center;
+    }
+    .filter-container-item {
+        width: 300px;
+    }
+
+    .search-container__settings-button {
+        margin-left:38px
     }
 }

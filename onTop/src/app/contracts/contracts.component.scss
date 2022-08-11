@@ -141,7 +141,7 @@
     flex-direction: column;
     row-gap: 21px;
     .contract-card {
-        width: 330px;
+        min-width: 330px;
         height: 217px;
         background: #FFFFFF;
         mix-blend-mode: normal;
