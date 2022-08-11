@@ -102,6 +102,20 @@
         border: transparent;
     }
 }
+.clear-filter-container {
+    visibility: hidden;
+    padding: 23px;
+    display: flex;
+    column-gap: 7px;
+    justify-content: end;
+    margin-right: 18px;
+    &__label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FF5A70;
+    }
+}
 
 @media (max-width: 768px) {
     .filter-container-item__input, .filter-container-item, .search-container__search-input {
@@ -109,5 +123,8 @@
     }
     .search-container__new-hire-button {
         width: 280px;
+    }
+    .clear-filter-container {
+        visibility:visible;
     }
 }

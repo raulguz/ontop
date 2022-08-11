@@ -44,6 +44,9 @@
         &--large {
             width: 220px; 
         }
+        &--card {
+            width: 50%;
+        }
     }
     &-name {
         display: flex;
@@ -111,6 +114,10 @@
     &--active {
         background-color: rgba(54, 207, 130, 0.18);
     }
+    &--card {
+        text-align: left;
+        width: 112px;
+    }
     &--pending {
         background-color: rgba(242, 157, 66, 0.3);
     }
@@ -119,9 +126,59 @@
         color: #36CF82;
         font-weight: 700;
     }
+    &__label--card {
+        margin-left: 10px;
+    }
 
     &__label--pending {
         color: #F29D42;
         font-weight: 700;
+    }
+}
+
+.contracts-card-container{
+    display: none;
+    flex-direction: column;
+    row-gap: 21px;
+    .contract-card {
+        width: 330px;
+        height: 217px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        flex-direction: column;
+        padding: 10px 13px 10px 13px;
+
+        .contract-row {
+            padding: 9px 20px 9px 20px;
+            display: flex;
+            height: 19px;
+            &--gray-bg {
+                background: #F9F9F9;
+            }
+
+            &__label {
+                font-weight: 700;
+                font-size: 12px;
+                color: #000000;
+                width: 50%;
+            }
+            &__value {
+                font-weight: 400;
+                font-size: 12px;
+                color: #3B3B3B;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contracts-container {
+        display: none;
+    }
+    .contracts-card-container {
+        display: flex;
     }
 }
